@@ -1,0 +1,29 @@
+/* Outer container */
+.invoice-container {
+  border: 2px solid black !important;
+}
+
+/* Force all borders inside invoice to be thick & black */
+.invoice-container * {
+  border-color: black !important;
+}
+
+.invoice-container .border {
+  border-width: 2px !important;
+}
+
+/* Table cells */
+.invoice-container table th,
+.invoice-container table td {
+  border: 2px solid black !important;
+}
+
+/* Print style for clean output */
+@media print {
+  body {
+    background: white;
+  }
+  .invoice-container {
+    border: 2px solid black !important;
+  }
+}
